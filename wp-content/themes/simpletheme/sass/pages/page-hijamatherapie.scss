@@ -1,0 +1,91 @@
+#bloc-page {
+
+    .page-content-hijama {
+        background-color: white;
+        padding: 4rem 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        // introduction
+        .intro {
+            max-width: 980px;
+            padding: 0 2rem;
+            font-size: 1.2rem;
+        }
+        // sections blocs
+        .presentation {
+            .container {
+                background-color: $color-grey-light;
+                margin-bottom: 4rem;
+                margin-top: 4rem;
+                h2 {
+                    color: $color-dark;
+                }
+                .text-content {
+                    color: $color-dark;
+                    p {
+                        text-transform: none;
+                        padding: 0rem 1rem;
+                        font-family: $font-text;
+                    }
+                    ul {
+                        text-align: start;
+                        li {
+                            list-style-type: circle;
+                        }
+                    }
+                
+                    .content-container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        justify-content: center;
+                        margin-top: 2rem;
+                        margin-bottom: 1rem;
+                    }
+                }
+            }
+        }
+
+        // second section
+        section.presentation.second-section {
+            .container {
+                .content-container {
+                   align-items: flex-start;
+                   ul {
+                    margin: 0;
+                   }
+
+                }
+            }
+        }
+
+        // medias queries
+        @media screen and(min-width: 1200px) {
+            section.presentation {
+                .container .text-content .content-container {
+                    margin-bottom: 3rem;
+                }
+            }
+            // second section
+        section.presentation.second-section {
+            .container {
+                .text-content ul {
+                    padding-left: 0;
+                }
+                flex-direction: row-reverse;
+                .content-container {
+                    flex-direction: row;
+                   justify-content: space-around;
+                   width: 100%;
+                   padding-top: 1.5rem;
+
+                }
+            }
+        }
+        }
+    }
+}

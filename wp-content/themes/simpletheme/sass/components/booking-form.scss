@@ -1,0 +1,102 @@
+
+    
+.page-content {
+
+    // content before form {
+        .container-booking {
+            margin-bottom: 2rem;
+            display: flex;
+            width: 100%;
+            max-width: 980px;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+
+            div {
+                width: 150px;
+                margin: 1rem;
+                padding: 0.5rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                background-image: linear-gradient($color-grey-light, white);
+            }
+        }
+
+        .subscribe {
+            margin: 2rem;
+            text-align: center;
+        }
+
+    //  form
+    #cp_abcform_pform {
+    
+        // title
+        .abc_selectdate {
+            display: none;
+        }
+
+        .selector {
+            background-color: $color-secondary;
+        }
+
+        .selector:hover {
+            background-color: $color-third;
+        }
+
+        // today
+        .today {
+            background-color: transparent;
+            text-decoration: none;
+        }
+
+        // delete line throw for indisponible days
+        .yui-calendar td.calcell.restricted {
+            text-decoration: none;
+        }
+
+        // personalize font family
+        #calheader, .calweekdaycell, .calcell {
+            font-family: $font-text;
+        }
+
+        .calcell {
+            width: 50px;
+            height: 50px;
+        }
+
+        // change color to table head
+        .yui-calendar .calhead {
+            background-color: $color-primary;
+            color: white;
+        }
+
+        // inputs
+        input, textarea {
+            padding: 0.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid $color-grey-light;
+        }
+
+        // input submit
+        input.cp_subbtn {
+            padding: 0.5rem 1rem;
+            color: white;
+            font-size: 1rem;
+            margin-top: 1rem;
+            background-color: $color-primary;
+        }
+        input.cp_subbtn:hover {    
+            background-color: $color-secondary;
+        }
+
+        #listcal1 {
+            margin-bottom: 4rem;
+        }
+
+    }
+}
+    

@@ -1,0 +1,194 @@
+body {
+    #bloc-page {
+
+        header {
+            position: relative;
+            height: 350px;
+            background-color: $color-primary;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+
+            h1 {
+
+                color: white;
+                font-family: $font-titles;
+                text-align: center;
+                font-size: 2rem;
+                font-weight: 100;
+                text-transform: capitalize;
+                z-index: 2;
+                margin-top: 4rem;
+            }
+
+            .wave {
+
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: 1;
+            }
+
+            .sheet {
+
+                width: 100%;
+                position: absolute;
+                bottom: 0;
+                z-index: 0;
+                
+            }
+
+            @media screen and(min-width: 350px) {
+
+                height: 400px;
+
+                h1 {
+                   
+                    font-size: 2.2rem;
+                }
+            }
+
+            @media screen and(min-width: 400px) {
+
+                height: 420px;
+
+                h1 {
+                   
+                    font-size: 2.2rem;
+                }
+            }
+
+            @media screen and(min-width: 450px) {
+
+                height: 500px;
+
+                h1 {
+
+                    font-size: 2.5rem;
+                    margin-top: 5rem;
+                }
+            }
+
+            @media screen and(min-width: 550px) {
+
+                height: 550px;
+
+                h1 {
+                  
+                    font-size: 2.8rem;
+                    margin-top: 6rem;
+                }
+            }
+
+            @media screen and(min-width: 600px) {
+
+                height: 650px;
+
+                h1 {
+                    
+                    font-size: 3.8rem;
+                }
+            }
+
+        }
+
+
+        @media screen and(min-width: 650px) {
+
+            header {
+
+                h1 {
+    
+                    font-size: 3.8rem;
+                    margin-top: 7rem;
+                }
+            }
+
+        }
+
+
+        @media screen and(min-width: 750px) {
+
+            header {
+    
+                height: 364.05px;
+                align-items: center;
+                
+                h1 {
+
+                    z-index: 1;
+                    font-size: 4rem;
+                    margin: 0;
+                    margin-bottom: 3.5rem;
+                
+                }
+
+                .wave {
+
+                    display: none;
+                }
+
+                .sheet {
+                    
+                    top: -85.95px;
+                    bottom: auto;
+                    right: 0;
+                    width: 50%;
+                    z-index: 0;
+                    height: 450px;
+                }
+            }
+        }
+
+        @media screen and(min-width: 1000px) {
+
+            header {
+
+                height: 398px;
+
+                .sheet {
+
+                    height: 500px;
+                    top: -102.25px;
+                }
+            }
+        }
+
+        @media screen and(min-width: 1200px) {
+
+            header {
+
+                height: 468px;
+
+                h1 {
+
+                    font-size: 6rem;
+                }
+
+                .sheet {
+
+                    height: 570px;
+                }
+            }
+        }
+
+        @media screen and(min-width: 1500px) {
+
+            header {
+
+                height: 598px;
+                
+                h1 {
+
+                    font-size: 7rem;
+                    
+                }
+
+                .sheet {
+
+                    height: 700px;
+                }
+            }
+        }
+    }
+}

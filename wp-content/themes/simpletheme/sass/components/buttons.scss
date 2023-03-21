@@ -1,0 +1,118 @@
+body {
+    #bloc-page {
+
+        .button {
+            padding: 0.8rem 1rem;
+            transition: 0.5s;
+            border: 1px solid white;
+            font-family: $font-buttons;
+            img {
+                width: 17px;
+                margin-left: 0.5rem;
+            }
+        }
+
+        .button-primary {
+            color: white;
+            background-color: $color-primary;
+        }
+
+        .button-primary:hover {
+            background-color: $color-secondary;
+        }
+
+        // buttons outline white
+        .button-outline-white {
+            color:white;
+        }
+
+        .button-outline-white:hover {
+            border-color: $color-primary;
+            background-color: $color-primary;
+        }
+
+        // buttons outline primary
+        .button-outline-primary {
+            color: $color-primary;
+            border-color: $color-primary;
+        }
+
+        .button-outline-primary:hover {
+            background-color: white;
+            border-color: white;
+        }
+
+        // buttons round
+        .button-round {
+            border-radius: 25px;
+        }
+
+        .button-outline-dark {
+            color: $color-dark;
+            border: 2px solid $color-grey;
+        }
+        
+        .button-outline-dark:hover {
+            background-color: dark;
+        }
+
+        // black button
+        .button-dark {
+            background-color: $color-dark;
+            color: white;
+        }
+         // black button
+         .button-dark:hover {
+            background-color: black;
+        }
+
+        // bloc end of page buttons
+        .buttons-bloc {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 1280px;
+
+            .training-link {
+                margin: 3rem 1rem;
+                border: 2px solid $color-grey-light;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                max-width: 500px;
+                padding: 1rem;
+
+                div.button-container {
+                    padding: 3rem 0;
+                    a {
+                        margin: 0;
+                        border: none;
+                    }
+                } 
+                    
+                p {
+                    font-size: 1.1rem;
+                    font-weight: 700;
+                    margin: 2rem 1rem;
+                }
+
+                picture img {
+                    margin-bottom: 1rem;
+                    border-radius: 100%;
+                    width: 200px;
+                    max-width: 280px;
+                    margin-top: 1rem;
+                    height: 170px;
+                }
+            }
+
+            a {
+                margin: 1rem
+            }
+        }
+    }
+}

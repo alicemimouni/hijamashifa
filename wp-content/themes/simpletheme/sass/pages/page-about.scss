@@ -1,0 +1,45 @@
+// page about
+
+.page-bfw-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+    .page-about-main {
+        max-width: 980px;
+        text-align: center;
+        width: 100%;
+        margin: 3rem 1rem;
+
+        .image {
+            margin-bottom: 2rem;
+
+            img {
+                border: 2px solid $color-grey-light;
+                margin: 2rem 0;
+                width: 70%;
+                max-width: 600px;
+            }
+        }
+            
+        section.content-page-about {
+            padding: 0 1rem;
+            background-color: $color-grey-light;
+            margin: 0 1rem;
+            margin-bottom: 3rem;
+
+            .container-page-about {
+                padding: 1rem;
+                font-size: 1.1rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+    
+            }
+        }
+    }
+}

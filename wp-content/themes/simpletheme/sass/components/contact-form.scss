@@ -1,0 +1,32 @@
+#bloc-page {
+
+    .page-form {
+
+        margin: 0 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .text-content {
+            text-align: start;
+
+            p {
+                padding: 0 1.5rem;
+                font-size: 1.1rem;
+            }
+        }
+        .wpforms-container {
+
+            width: 100%;
+
+            form {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                justify-content: center;
+                padding: 1.5rem;
+            }
+        }
+    }
+}

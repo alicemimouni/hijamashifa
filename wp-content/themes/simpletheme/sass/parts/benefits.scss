@@ -1,0 +1,111 @@
+// section benefits
+
+#bloc-page {
+
+    .benefits {
+        background-color: $color-grey-light;
+    
+        // block content
+        .container {
+    
+            color: $color-dark;
+            padding: 7rem 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: start;
+            max-width: 1280px;
+            margin: auto;
+    
+            .subtitle {
+                width: 100%;
+                text-align: center;
+                h2 {
+                    margin-top: 0;
+                }
+            }
+    
+            .main-content {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+
+                // block title text and button
+                .text-content {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    max-width: 750px;
+
+                    h2 {
+                        margin: 0;
+                    }
+
+                    ul {
+                        font-family: $font-text;
+                        padding-left: 0;
+            
+                        // block list
+                        div {
+                            display: flex;
+                            align-items: baseline;
+                            margin: 1rem;
+
+                            img {
+                                margin-right: 0.5rem;
+                            }
+                            
+                            li {
+                                list-style-type: none;
+                            }
+                        }
+                    }
+                    .button {
+                        margin-top: 2rem;
+                    }
+                }
+            }
+    
+            // hide image in mobile version
+            .d-none-mobile {
+                display: none;
+            }
+            
+            // line under title
+            .line {
+                margin: 1rem;
+            }
+        }
+    
+        @media screen and(min-width: 1200px) {
+    
+            .container {
+
+                .subtitle {
+                    text-align: start;
+                    margin: 0 4rem;
+                }
+    
+                .d-none-mobile {
+                    display: flex;
+                    width: 500px;
+                    transition: 1s;
+                }
+                .d-none-mobile:hover {
+                    transform: scale(1.1);
+                }
+                
+                .main-content .text-content {
+                    align-items: flex-start;
+                    ul {
+                        div {
+                            margin: 2rem 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

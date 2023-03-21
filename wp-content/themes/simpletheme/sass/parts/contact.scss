@@ -1,0 +1,55 @@
+#bloc-page {
+
+    .contact {
+        background-color: $color-secondary;
+        padding: 2rem 1rem;
+    
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+    
+            h2 {
+                margin: 0;
+                margin-top: 1rem;
+                color: white;
+            }
+    
+            .line {
+                margin-bottom: 1rem;
+                width: 100px;
+            }
+    
+            address {
+                text-align: center;
+                margin: 1rem;
+    
+                a {
+                    display: block;
+                    margin-bottom: 0.5rem;
+                    font-family: $font-capitalize-text;
+                    text-transform: uppercase;
+                    font-style: normal;
+                }
+    
+                a:last-child {
+                    text-transform: none;
+                    font-family: $font-text;
+                    margin-bottom: 0;
+                }
+            }
+        }
+    
+        @media screen and(min-width: 700px) {
+            
+           .container {
+        
+               address {
+                font-size: 1.5rem;
+               }
+           }
+        }
+    }
+}
