@@ -13,7 +13,7 @@ get_template_part( 'template-parts/navbar' );
 
 get_template_part( 'template-parts/title' ); ?>
 
-<div class="background-white page-bfw-content">
+<div class="background-white page-bfw-content margin-default">
 
 <?php the_content(); ?>
 

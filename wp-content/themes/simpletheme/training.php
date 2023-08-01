@@ -36,7 +36,7 @@ get_template_part( 'template-parts/title' ); ?>
         $img_first_part = wp_get_attachment_image($image_first_part_id, 'full');
 
         if(get_field('image_first_part_training_page')): ?>
-        <div class="img-part reveal">
+        <div class="img-part">
             <?php echo $img_first_part; 
         endif; ?>
         </div>
@@ -60,7 +60,7 @@ get_template_part( 'template-parts/title' ); ?>
         $img_second_part = wp_get_attachment_image($image_second_part_id, 'full');
 
         if(get_field('image_part_two_training_page')): ?>
-            <div class="img-part reveal">
+            <div class="img-part">
             <?php echo $img_second_part; 
              endif; ?>
             </div>

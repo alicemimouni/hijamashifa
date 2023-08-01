@@ -23,9 +23,13 @@ body {
 
         }
 
+        // default margin for default pages
+        .margin-default {
+            padding-bottom: 5rem;
+        }
+
         // titles with class page-title
         h1.page-title {
-
             font-size: 2.5rem;
             color: white;
             font-weight: 500;
