@@ -60,7 +60,8 @@ class DbCache_Plugin {
 		add_action( 'edit_user_profile_update', array( $this, 'on_change' ), 0 );
 
 		if ( Util_Environment::is_wpmu() ) {
-			add_action( 'delete_blog', array( $this, 'on_change' ), 0 );
+			add_action( 'wp_uninitialize_site', array( $this, 'on_change' ), 0 );
+			add_action( 'wp_update_site', array( $this, 'on_change' ), 0 );
 		}
 
 		add_filter( 'w3tc_admin_bar_menu', array( $this, 'w3tc_admin_bar_menu' ) );
@@ -167,7 +168,10 @@ class DbCache_Plugin {
 	}
 
 	/**
-	 * Comment status action
+	 * Comment status action fired immediately after transitioning a comment’s status from one to another
+	 * in the database and removing the comment from the database cache, but prior to all status transition hooks.
+	 *
+	 * @link https://developer.wordpress.org/reference/functions/wp_set_comment_status/
 	 *
 	 * @param integer $comment_id Comment ID.
 	 * @param string  $status Status.
