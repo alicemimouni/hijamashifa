@@ -1,6 +1,6 @@
  # SITE WEB HIJAMASHIFA
 
-![site-web-hijama-shifa-extrait](https://github.com/alicemimouni/hijamashifa/assets/82211729/7b0c62a9-03c4-4b5b-9645-bd5514856de8)
+![hijamashifa-capture](https://github.com/alicemimouni/hijamashifa/assets/82211729/6fbed1a3-920b-4a34-80a7-dcf210c53bfb)
 
 ## Présentation
 
