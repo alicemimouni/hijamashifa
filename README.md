@@ -8,7 +8,7 @@ Ce site est réalisé dans le cadre de mon activité de Développeur web freelan
 
 ## Technologies utilisées
 
-Pour la maquette, j'ai utilisé **Figma**. [Voir la maquette](https://www.figma.com/proto/p4FK3aqnGzgV4ys87cYz4z/hijamatherapy?page-id=0%3A1&type=design&node-id=1302-97&viewport=388%2C215%2C0.12&t=YoRS9Q0zRCgkakcR-1&scaling=contain&starting-point-node-id=1302%3A97&mode=design)
+Pour la maquette, j'ai utilisé **Figma**. [Voir la maquette](https://www.figma.com/proto/p4FK3aqnGzgV4ys87cYz4z/hijamatherapy?page-id=0%3A1&type=design&node-id=2-2&viewport=388%2C215%2C0.12&t=XKS8Pm2LIaPN9a8z-1&scaling=scale-down-width&starting-point-node-id=2%3A2&show-proto-sidebar=1&mode=design)
 
 Côté front-end, j'utilise le préprocesseur **Sass**. Il me permet de mieux organiser mon CSS, et je l'ai installé à l'aide du gestionnaire de paquets **npm**. [Voir le dossier Sass](wp-content/themes/simpletheme/sass)
 
